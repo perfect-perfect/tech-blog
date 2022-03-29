@@ -53,3 +53,20 @@ module.exports = sequelize;
 
 // Section 13.1.6: Create API Routes for the User model
 //------------------------------------------------------
+// What is the main reason we would create a class bassed off another
+//  - so that class would inherit functionality
+//  - Every time we extend a class from the Sequelize 'Model' class
+//      -  that new model inherits a number of methods for crud
+
+// Hook Up the Server
+// Let's make the 'server.js file now
+
+// Section 13.2.4: Introducing bcyrpt
+//------------------------------------
+
+npm install bcrypt
+
+// Section 13.2.6: Create the Login Route for Authentication
+//-----------------------------------------------------------
+
+//
