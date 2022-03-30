@@ -96,3 +96,26 @@ npm install bcrypt
 }
 
 // Section 13.5.1 (we skipped 13.4 because it was all about vote functionality, which our app does not have)
+//-------------------------------------------------------------------------------------------------------------
+// The last remaining piece is setting up a 'Comment' model
+//  - this will involve something similar to the 'vote' moder
+//      - as we need comments to be associated with both a user and a post
+// GitHUb Issue:
+//  - i can leave a comment on a another user's post
+//  - i can leave a comment on another user's post
+
+// Section 13.5.3: Create the Comment Model
+//------------------------------------------
+// create the model
+// next in index.js file add the following associations
+
+// Section 13.5.4: Create the API Routes
+//---------------------------------------
+// Comments will ultimately be included with the other APIs that you've already set up
+//  - but first lets define our own endpoints
+//  - create a new file located at 'routes/api/comment-routes.js'
+
+// Section 13.5.5: Update the Routes to Include Comments
+//-------------------------------------------------------
+// add comments to the post-routes
+// add comments to the user-routes

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User } = require('../../models');
+const { Post, User, Comment } = require('../../models');
 
 // GET all posts at api/posts
 router.get('/', (req, res) => {
@@ -13,6 +13,16 @@ router.get('/', (req, res) => {
         ],
         // we JOIN to the 
         include: [
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
+            },
+            // Note that the 'Comment' model include the 'User' model as well
+            //  - so it can attach the username to the comment
             {
                 model: User,
                 attributes: ['username']
@@ -40,6 +50,15 @@ router.get('/:id', (req, res) => {
             'created_at'
         ],
         include: [
+            {
+                model: Comment,
+                attributs: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
+
+            },
             {
                 model: User,
                 attributes: ['username']
