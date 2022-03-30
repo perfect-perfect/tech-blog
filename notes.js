@@ -145,3 +145,79 @@ npm install bcrypt
 
 // Add a Style Sheet
 //  in the server.js, add the following line at the top of the file
+
+// Section 14.1.4: Set Up the Template Engine
+//--------------------------------------------
+// To get started with Handlebars.js you first  need to install the correct dependency by typing in the following command
+
+// next you'll need to set up where the template files live
+//  - in the 'views/layouts' create a file called 'main.handlebars'
+//  - notice the special place holder in the main {{{ body }}}
+//      - this is handlebars syntax for data that will be plugged in later
+// let's make the homepage now
+//  - in the 'views' folder create a file called 'homepage.handlebars
+
+// Your express.js routes take requests, communicate with the Models and will response with a view
+//  - create controllers/home-routes.js
+
+
+// Section 14.1.5: Create the Homepage Template
+//----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=====================================================================================
+// The homepage
+//  - presented with all existing posts that include
+//      - post title
+//      - date created
+// the single-post page
+//  - when i click on an exisitng post i am presented with the single-post page
+//      - the post title
+//      - the post content
+//      - the post creator's username
+//      - the date the post was created
+// the dashboard
+//  - presented with any blog posts I have created
+//      - when i click on an exisitng post in the dashboard i am taken to the edit/update page
+//  - the option to add a new blog post
+//      - when i click on the botton to create a new blog post i ( taken to a new Create a post page ) am prompted to enter both
+//      - create a post page
+//          - the title
+//q         - the contents 
+//      - when i click on the button to create a new blow post
+//          - the title and contens of the post are saved
+//          - i am taken back to the updated dashboard with the new blog post
+// the edit/update page
+//  - delete a post
+//  - update a post
+//  - after done i am taken back to an updated dashboard
