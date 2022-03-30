@@ -19,6 +19,7 @@ SHOW DATABASES;
 //  - CREATE THE DATABASE CONNECTION
 // Import the Sequelize constructor from the library
 const Sequelize = require('sequelize');
+const router = require('./controllers');
 
 require('dotenv').config();
 
@@ -69,4 +70,27 @@ npm install bcrypt
 // Section 13.2.6: Create the Login Route for Authentication
 //-----------------------------------------------------------
 
-//
+// Section 13.3.4: Create the Post model ( this one wil be a little different from the chapter )
+//-----------------------------------------------------------------------------------------------
+// GitHub Issues
+//  - as a user, i can create a post
+//  - as a user, i can retrieve all the posts
+//  - as a user, i can retrieve a post by id
+//  - as a user, i can update the title and content of a post
+//  - as a user, i can delete a post
+
+// Section 13.3.4: Create the Post Model
+//---------------------------------------
+
+// Section 13.3.5: Define Model Associations
+//--------------------------------------------
+// Any time we change a model association we must change the force method to 'true' in the 'server.js'
+//  - then the database connection must sync with the new model definitions and associations
+
+// Section 13.3.6: Create API routes for the Post Model
+//-------------------------------------------------------
+
+// GET a single post
+ router,get('/:id', req, res) => {
+
+}
