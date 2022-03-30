@@ -94,3 +94,5 @@ npm install bcrypt
  router,get('/:id', req, res) => {
 
 }
+
+// Section 13.5.1 (we skipped 13.4 because it was all about vote functionality, which our app does not have)
