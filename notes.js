@@ -119,3 +119,29 @@ npm install bcrypt
 //-------------------------------------------------------
 // add comments to the post-routes
 // add comments to the user-routes
+
+// Section 14.1.3: Set Up the Project
+//------------------------------------
+// GitHub Issues:
+
+// Create a homepage
+//  - I can view all posts in a list
+//  - I can see how many comments each article has
+//  - I can click on the comment count to route to a different page
+
+// Create a login and signup page
+//  - I can visit a login page to create a new account or log into an existing account
+//  - I want to stay logged in even if I refresh the page or close the browser tab
+//  - I can click a "logout" button for the app to forget me
+
+// Create a single post page
+//  - i can view a whole post on a seperate page
+//  - as a logged-in user, i can add a comment to an article
+
+// Create a dashboard for logged-in users
+//  - as a logged-in user, i can view all of my posts on a seperate dashboard page
+//  - as a logged-in user, i can crea new posts via the dashboard
+//  - as a logged-in user, i can edit or delete my existing posts
+
+// Add a Style Sheet
+//  in the server.js, add the following line at the top of the file
