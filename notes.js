@@ -164,6 +164,9 @@ npm install bcrypt
 // Section 14.1.5: Create the Homepage Template
 //----------------------------------------------
 
+// Section 14.2.1: Introduction
+//-------------------------------
+
 
 
 
@@ -221,3 +224,11 @@ npm install bcrypt
 //  - delete a post
 //  - update a post
 //  - after done i am taken back to an updated dashboard
+// login page
+//  - login
+//      - create a username or password
+//          - when i click on the signup button then my user credentials are saved and I am logged into the site
+//  - sign-up
+
+// Section 14.2.4: Add Front-End Logic to Forms
+//----------------------------------------------
