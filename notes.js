@@ -167,8 +167,37 @@ npm install bcrypt
 // Section 14.2.1: Introduction
 //-------------------------------
 
+// Section 14.2.5: Create a Session on the Back End
+//--------------------------------------------------
+// Remember what our goal is, after a user logs in
+//  - they should have access to new routes and features
+//      - like being able to leave comments
+//  - but how do you know someone is logged in as they route to different pages on your app
+//  - this is where 'sessions' come in handy
+//      - 'sessions' allow our Express.js server to keep track of 
+//          - which user is making a request
+//          - store useful info about them in memory
+
+// Now accessing the seesion information in the routes is very straightforward
+//  - Open 
+
+// Section 14.2.6: Add logic to Destory the Session
+//--------------------------------------------------
+// Now that we've given users the ability to log in, we should probably allow them to logout as well
+//  - in user-routes
+//  - create a 'logout.js' file in javascript
+
+// Section 14.2.4: Add Front-End Logic to Forms
+//----------------------------------------------
+
+// Section 14.3.1: Introduction
+//-------------------------------
+// - as a user i can view a full post on a seperate page
+// - as a logged in user, i can add a comment on a post
 
 
+// Section 14.3.5: Add Comment Functionality
+//-------------------------------------------
 
 
 
@@ -230,5 +259,3 @@ npm install bcrypt
 //          - when i click on the signup button then my user credentials are saved and I am logged into the site
 //  - sign-up
 
-// Section 14.2.4: Add Front-End Logic to Forms
-//----------------------------------------------
