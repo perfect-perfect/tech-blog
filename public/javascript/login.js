@@ -15,8 +15,7 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            // important for rerouting
-            // document.location.replace('/dashboard')
+            document.location.replace('/dashboard')
             console.log('success');
         }
         else {
