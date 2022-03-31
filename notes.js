@@ -198,6 +198,37 @@ npm install bcrypt
 
 // Section 14.3.5: Add Comment Functionality
 //-------------------------------------------
+// The first step will be to set up the front-end Javascript
+//  - in 'public/javascript/comment.js'
+
+// Section 14.3.6: Conditionally Render the Form Elements
+//---------------------------------------------------------
+// if a user hasn't logged in to the app, we don't want them to see the comment form
+//- let's use another Hnadlebars.js helper
+//  - {{#if value}}
+//      - checks for 'truthy' values only
+
+// Section 14.3.7: Conditionally Render the Login Links
+//-------------------------------------------------------
+// We could further improve the experience
+//  - by not showing the login link to users who are already logged-in
+//      - and not showing the logout button to users who are already logged-out
+
+// Section 14.4.4: Create a partial for Comments
+//-----------------------------------------------
+
+// Section 14.5.1: introduction
+//-------------------------------
+// User's still don't have a way to create new posts
+//  - as a logged in user, i can view all of my posts on a seperate dashboard page
+//  - as a logged in user, i can create a blog posts via the dashboard
+//  - as a logged in user, i can edit or delete my blog posts via the dashboard
+// Building this new dashboard view for logged-in users will involve skills ou already have
+
+// Section 14.5.3: Create the Dashboard Template
+//------------------------------------------------
+
+
 
 
 

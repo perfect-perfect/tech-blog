@@ -34,7 +34,8 @@ router.get('/', (req, res) => {
 
             res.render('homepage', { 
                 // When we pass the 'post' object into the partials, we don't pass the object as is, but rather pass in all of the properties of that object
-                posts
+                posts,
+                loggedIn: req.session.loggedIn
             });
         })
         .catch(err => {
@@ -100,6 +101,7 @@ router.get('/login', (req, res) =>{
         res.redirect('/');
         return;
     }
+    res.render('login');
 })
 
 module.exports = router;

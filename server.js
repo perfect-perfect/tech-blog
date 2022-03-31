@@ -9,15 +9,16 @@ const sess = {
     // one hour cookie maxAge
     cookie: { maxAge: 3600000},
     resave: false,
-    saveUnitialized: true,
+    saveUninitialized: true,
     store: new SequelizeStore({
         db: sequelize
     })
 };
+const helpers = require('./utils/helpers')
 const app = express();
 const PORT = process.env.PORT || 3001;
 const exphbs = require('express-handlebars');
-const hbs = exphbs.create({});
+const hbs = exphbs.create({ helpers });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
