@@ -45,7 +45,11 @@ router.get('/', (req, res) => {
 
 // login route
 router.get('/login', (req, res) =>{
-    res.render('login')
+    if (req.session.loggedIn) {
+        // important for redirecting
+        res.redirect('/');
+        return;
+    }
 })
 
 module.exports = router;
