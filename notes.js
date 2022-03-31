@@ -228,6 +228,11 @@ npm install bcrypt
 // Section 14.5.3: Create the Dashboard Template
 //------------------------------------------------
 
+// Section 14.5.5: Protect Routes with Middleware
+//------------------------------------------------
+// a good approach would be to redirect a user who isn't logged in to the '/login' route
+//  - whenever they try to access a route meant for authenticated users
+
 
 
 
