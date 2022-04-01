@@ -115,13 +115,12 @@ router.post('/logout', (req, res) => {
 });
 
 
-// (i don't think i'll need this one)
-// PUT update user ( i don't think i'll need this one)
+// PUT update user (we currently do not have this functionality. but hope to implement it down the line)
 router.put('/:id', (req, res) => {
 
 })
 
-// (i don't think i'll need this one)
+
 // DELETE user at /api/users/1
 router.delete('/:id', (req, res) => {
     User.destroy({

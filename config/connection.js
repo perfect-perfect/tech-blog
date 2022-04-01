@@ -1,12 +1,10 @@
 // Import the Sequelize constructor from the library
 const Sequelize = require('sequelize');
-
+// allows us to use .env
 require('dotenv').config();
 
 
 
-// declaring a variable as const without setting it equal to a value will throw an error
-//  - that is why we use 'let'
 let sequelize;
 
 // creates the connectiion to the database depending pn the environemnt

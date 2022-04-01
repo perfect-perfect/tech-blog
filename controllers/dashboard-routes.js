@@ -3,13 +3,10 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-
+// GET all posts for dashboard
 router.get('/', withAuth, (req,res) => {
     Post.findAll({
-        // because the dashboard should only display posts created by the logged in user
-        //  - you need to add a 'where' object to the 'findAll()' query that uses the id saved on the session.
         where: {
-            // Use the id from the session
             user_id: req.session.user_id
         },
         attributes: [
@@ -44,6 +41,7 @@ router.get('/', withAuth, (req,res) => {
         });
 });
 
+// GET a single post's information for the edit page.
 router.get('/edit/:id', withAuth, (req, res) => {
     Post.findOne({
         where: {
@@ -91,6 +89,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
 
 })
 
+// GET the create-post.handlebars rendered
 router.get('/create-post', withAuth, (req, res) => {
     res.render('create-post');
 });

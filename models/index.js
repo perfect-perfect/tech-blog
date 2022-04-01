@@ -5,7 +5,6 @@ const Comment = require('./Comment');
 
 // a user can have many posts
 User.hasMany(Post, {
-    // 'user_id' exists on the Post Model, it is a reference (foreign key) to the User table/object's primary key, the 'id'
     foreignKey: 'user_id'
 });
 
@@ -14,18 +13,22 @@ Post.belongsTo(User, {
     foreignKey: 'user_id'
 })
 
+// a comment can have one owner/user
 Comment.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
+// a comment can have only on postassociated with it
 Comment.belongsTo(Post, {
     foreignKey: 'post_id'
 });
 
+// a user can have many comments
 User.hasMany(Comment, {
     foreignKey: 'user_id'
 });
 
+// a post can have many comments
 Post.hasMany(Comment, {
     foreignKey: 'post_id'
 });

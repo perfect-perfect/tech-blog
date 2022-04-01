@@ -24,7 +24,6 @@ async function commentFormHandler(event) {
         }
         else {
             alert(response.statusText);
-            console.log('error here')
         }
     }
 }
