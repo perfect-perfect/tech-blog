@@ -234,6 +234,17 @@ npm install bcrypt
 //  - whenever they try to access a route meant for authenticated users
 
 
+// Section 14.5.6: Create an Edit Post Page
+//-------------------------------------------
+// In the dashboard user's can click the 'Edit post' link that follows each post, 
+
+// Hook Up the Front End Logic
+//  - next you'll need to hook up 
+
+// Implement the Edit
+
+
+
 
 
 

@@ -3,10 +3,7 @@
     <li>
         <article class="post">
             <div class="title">
-                <a herf="/posts/{{post.id}}" target="_blank">{{post.title}}</a>
-            </div>
-            <div class="post-content">
-                {{post.post_content}}
+                <a href="/post/{{post.id}}" target="blank">{{post.title}}</a>
             </div>
             <div class="meta">
                 by {{post.user.username}} on {{format_date post.created_at}}        
