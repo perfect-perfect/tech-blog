@@ -244,6 +244,11 @@ npm install bcrypt
 // Implement the Edit
 
 
+// QUESTIONS ???
+// - the create-post page and the edit post page need larger input fields for the post contnet. I made it larger in the create field, but it isn't acting appropriately 
+
+
+
 
 
 
