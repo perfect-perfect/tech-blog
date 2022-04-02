@@ -82,7 +82,6 @@ router.get('/post/:id', (req, res) => {
 
             // pass data to template
             res.render('single-post', { 
-                // When we pass the 'post' object into the partials, we don't pass the object as is, but rather pass in all of the properties of that object
                 post,
                 loggedIn: req.session.loggedIn
             });
@@ -96,7 +95,6 @@ router.get('/post/:id', (req, res) => {
 // GET login.handlebars rendered
 router.get('/login', (req, res) =>{
     if (req.session.loggedIn) {
-        // important for redirecting
         res.redirect('/');
         return;
     }
